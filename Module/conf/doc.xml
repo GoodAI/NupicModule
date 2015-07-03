@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NupicModule</name>
+    </assembly>
+    <members>
+        <member name="T:GoodAI.NupicModule.MyNupicNode">
+            <author>Good AI</author>
+            <status>Working</status>
+            <summary>Node wrapping up the Nupic Core library (https://github.com/numenta/nupic.core)</summary>
+            <description>Nupic is open source implementation of Numenta's cortical learning algorithm.
+            This node uses three specific parts of the Nupic Core library (through the wrapper library NupicCoreSoloWrapper.dll):
+            <ul>
+            <li>SpatialPooler class,</li>
+            <li>Cells4 class (temporeal pooler implementation) and</li>
+            <li>FasfClaClassifier class</li>
+            </ul>
+            </description>
+        </member>
+    </members>
+</doc>

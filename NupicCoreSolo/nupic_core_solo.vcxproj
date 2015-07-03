@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{261BBC20-C75D-45B9-A0E0-8CBBCFC9F4D4}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>nupic_core_solo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">obj\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">nupic_core_solo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">obj\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">nupic_core_solo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>external\windows64\include;external\common\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>obj\$(Configuration)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NTA_OS_WINDOWS;NTA_ARCH_64;HAVE_CONFIG_H;NTA_INTERNAL;BOOST_NO_WREGEX;NUPIC2;NTA_ASSERTIONS_ON;NTA_ASM;PSAPI_VERSION=1;APR_DECLARE_STATIC;APU_DECLARE_STATIC;ZLIB_WINAPI;_MBCS;_CRT_SECURE_NO_WARNINGS;NDEBUG;NTA_COMPILER_MSVC;CAPNP_LITE=1;_VARIADIC_MAX=10;NOMINMAX;CMAKE_INTDIR="Debug";NUPIC_CORE_EXPORTS;_CRT_USE_WINAPI_FAMILY_DESKTOP_APP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NTA_OS_WINDOWS;NTA_ARCH_64;HAVE_CONFIG_H;NTA_INTERNAL;BOOST_NO_WREGEX;NUPIC2;NTA_ASSERTIONS_ON;NTA_ASM;PSAPI_VERSION=1;APR_DECLARE_STATIC;APU_DECLARE_STATIC;ZLIB_WINAPI;WIN32;_WINDOWS;_MBCS;_CRT_SECURE_NO_WARNINGS;NDEBUG;NTA_COMPILER_MSVC;CAPNP_LITE=1;_VARIADIC_MAX=10;NOMINMAX;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>external\windows64\include;external\common\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>external\windows64\include;external\common\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>yaml-cpp.lib;yaml.lib;apr-1.lib;aprutil-1.lib;z.lib;ws2_32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>external\windows64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>external\windows64\include;src;external\common\include;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>obj\$(Configuration)</AssemblerListingLocation>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <EnablePREfast>false</EnablePREfast>
+      <ErrorReporting>Prompt</ErrorReporting>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level2</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NTA_OS_WINDOWS;NTA_ARCH_64;HAVE_CONFIG_H;NTA_INTERNAL;BOOST_NO_WREGEX;NUPIC2;NTA_ASSERTIONS_ON;NTA_ASM;PSAPI_VERSION=1;ZLIB_WINAPI;_MBCS;_CRT_SECURE_NO_WARNINGS;NTA_COMPILER_MSVC;CAPNP_LITE=1;_VARIADIC_MAX=10;NOMINMAX;CMAKE_INTDIR="Release";APR_DECLARE_STATIC;APU_DECLARE_STATIC;NUPIC_CORE_EXPORTS;_CRT_USE_WINAPI_FAMILY_DESKTOP_APP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NTA_OS_WINDOWS;NTA_ARCH_64;HAVE_CONFIG_H;NTA_INTERNAL;BOOST_NO_WREGEX;NUPIC2;NTA_ASSERTIONS_ON;NTA_ASM;PSAPI_VERSION=1;APR_DECLARE_STATIC;APU_DECLARE_STATIC;ZLIB_WINAPI;WIN32;_WINDOWS;_MBCS;_CRT_SECURE_NO_WARNINGS;NDEBUG;NTA_COMPILER_MSVC;CAPNP_LITE=1;_VARIADIC_MAX=10;NOMINMAX;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>external\windows64\include;external\common\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>external\windows64\include;external\common\include;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>yaml-cpp.lib;yaml.lib;apr-1.lib;aprutil-1.lib;z.lib;ws2_32.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>external\windows64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\nupic\algorithms\BitHistory.cpp" />
+    <ClCompile Include="src\nupic\algorithms\Cell.cpp" />
+    <ClCompile Include="src\nupic\algorithms\Cells4.cpp" />
+    <ClCompile Include="src\nupic\algorithms\ClassifierResult.cpp" />
+    <ClCompile Include="src\nupic\algorithms\CondProbTable.cpp" />
+    <ClCompile Include="src\nupic\algorithms\Connections.cpp" />
+    <ClCompile Include="src\nupic\algorithms\FastClaClassifier.cpp" />
+    <ClCompile Include="src\nupic\algorithms\GaborNode.cpp" />
+    <ClCompile Include="src\nupic\algorithms\ImageSensorLite.cpp" />
+    <ClCompile Include="src\nupic\algorithms\InSynapse.cpp" />
+    <ClCompile Include="src\nupic\algorithms\Linear.cpp" />
+    <ClCompile Include="src\nupic\algorithms\OutSynapse.cpp" />
+    <ClCompile Include="src\nupic\algorithms\Segment.cpp" />
+    <ClCompile Include="src\nupic\algorithms\SegmentUpdate.cpp" />
+    <ClCompile Include="src\nupic\algorithms\SpatialPooler.cpp" />
+    <ClCompile Include="src\nupic\algorithms\Svm.cpp" />
+    <ClCompile Include="src\nupic\engine\Collections.cpp" />
+    <ClCompile Include="src\nupic\engine\Input.cpp" />
+    <ClCompile Include="src\nupic\engine\Link.cpp" />
+    <ClCompile Include="src\nupic\engine\LinkPolicyFactory.cpp" />
+    <ClCompile Include="src\nupic\engine\Network.cpp" />
+    <ClCompile Include="src\nupic\engine\NuPIC.cpp" />
+    <ClCompile Include="src\nupic\engine\Output.cpp" />
+    <ClCompile Include="src\nupic\engine\Region.cpp" />
+    <ClCompile Include="src\nupic\engine\RegionImpl.cpp" />
+    <ClCompile Include="src\nupic\engine\RegionImplFactory.cpp" />
+    <ClCompile Include="src\nupic\engine\RegionIo.cpp" />
+    <ClCompile Include="src\nupic\engine\RegionParameters.cpp" />
+    <ClCompile Include="src\nupic\engine\Spec.cpp" />
+    <ClCompile Include="src\nupic\engine\TestFanIn2LinkPolicy.cpp" />
+    <ClCompile Include="src\nupic\engine\TestNode.cpp" />
+    <ClCompile Include="src\nupic\engine\UniformLinkPolicy.cpp" />
+    <ClCompile Include="src\nupic\engine\YAMLUtils.cpp" />
+    <ClCompile Include="src\nupic\math\SparseMatrixAlgorithms.cpp" />
+    <ClCompile Include="src\nupic\math\StlIo.cpp" />
+    <ClCompile Include="src\nupic\ntypes\ArrayBase.cpp" />
+    <ClCompile Include="src\nupic\ntypes\Buffer.cpp" />
+    <ClCompile Include="src\nupic\ntypes\BundleIO.cpp" />
+    <ClCompile Include="src\nupic\ntypes\Collection.cpp" />
+    <ClCompile Include="src\nupic\ntypes\Dimensions.cpp" />
+    <ClCompile Include="src\nupic\ntypes\MemParser.cpp" />
+    <ClCompile Include="src\nupic\ntypes\Scalar.cpp" />
+    <ClCompile Include="src\nupic\ntypes\Value.cpp" />
+    <ClCompile Include="src\nupic\os\Directory.cpp" />
+    <ClCompile Include="src\nupic\os\DynamicLibrary.cpp" />
+    <ClCompile Include="src\nupic\os\Env.cpp" />
+    <ClCompile Include="src\nupic\os\FStream.cpp" />
+    <ClCompile Include="src\nupic\os\OS.cpp" />
+    <ClCompile Include="src\nupic\os\OSUnix.cpp" />
+    <ClCompile Include="src\nupic\os\OSWin.cpp" />
+    <ClCompile Include="src\nupic\os\Path.cpp" />
+    <ClCompile Include="src\nupic\os\Regex.cpp" />
+    <ClCompile Include="src\nupic\os\Timer.cpp" />
+    <ClCompile Include="src\nupic\regions\VectorFile.cpp" />
+    <ClCompile Include="src\nupic\regions\VectorFileEffector.cpp" />
+    <ClCompile Include="src\nupic\regions\VectorFileSensor.cpp" />
+    <ClCompile Include="src\nupic\test\Tester.cpp" />
+    <ClCompile Include="src\nupic\types\BasicType.cpp" />
+    <ClCompile Include="src\nupic\types\Fraction.cpp" />
+    <ClCompile Include="src\nupic\utils\LoggingException.cpp" />
+    <ClCompile Include="src\nupic\utils\LogItem.cpp" />
+    <ClCompile Include="src\nupic\utils\Random.cpp" />
+    <ClCompile Include="src\nupic\utils\StringUtils.cpp" />
+    <ClCompile Include="src\nupic\utils\TRandom.cpp" />
+    <ClCompile Include="src\nupic\utils\Watcher.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\nupic\proto\BitHistory.capnp.c++" />
+    <None Include="src\nupic\proto\ClaClassifier.capnp.c++" />
+    <None Include="src\nupic\proto\RandomProto.capnp.c++" />
+    <None Include="src\nupic\proto\SparseBinaryMatrixProto.capnp.c++" />
+    <None Include="src\nupic\proto\SparseMatrixProto.capnp.c++" />
+    <None Include="src\nupic\proto\SpatialPoolerProto.capnp.c++" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

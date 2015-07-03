@@ -1,0 +1,1 @@
+adjusted headers with the functions exported from nupic_core_solo used in the NupicCoreSoloWrapper.
