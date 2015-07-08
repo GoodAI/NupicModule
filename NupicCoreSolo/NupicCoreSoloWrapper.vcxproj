@@ -107,12 +107,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\common\include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>
       </AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\bin\Release;external\windows64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)bin\Debug;$(ProjectDir)external\windows64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -132,12 +133,12 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NTA_OS_WINDOWS;NTA_ARCH_64;HAVE_CONFIG_H;NTA_INTERNAL;BOOST_NO_WREGEX;NUPIC2;NTA_ASSERTIONS_ON;NTA_ASM;PSAPI_VERSION=1;APR_DECLARE_STATIC;APU_DECLARE_STATIC;ZLIB_WINAPI;_MBCS;_CRT_SECURE_NO_WARNINGS;NTA_COMPILER_MSVC;CAPNP_LITE=1;_VARIADIC_MAX=10;NOMINMAX;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <AdditionalIncludeDirectories>D:\KeenSWH\AI\Projects\Libraries\nupic.core\external\common\include;D:\KeenSWH\AI\Projects\Libraries\nupic.core\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\common\include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>yaml-cpp.lib;yaml.lib;apr-1.lib;aprutil-1.lib;z.lib;ws2_32.lib;psapi.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\bin\Release;external\windows64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)bin\Release;$(ProjectDir)external\windows64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>
