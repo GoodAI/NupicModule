@@ -206,10 +206,10 @@
           <Translation X="127" Y="-113" />
         </LayoutProperties>
         <GroupInputNodes>
-          <MyParentInput ParentInputIndex="0" Id="61" Name="CurrentLabel">
+          <MyParentInput ParentInputIndex="0" Id="61" Name="Prediction">
             <Location X="-291" Y="115" />
           </MyParentInput>
-          <MyParentInput ParentInputIndex="1" Id="72" Name="Prediction">
+          <MyParentInput ParentInputIndex="1" Id="72" Name="CurrentLabel">
             <Location X="-285" Y="231" />
           </MyParentInput>
         </GroupInputNodes>
@@ -390,7 +390,7 @@
   <UsedModules>
     <Module Name="NupicModule.dll" Version="1" />
     <Module Name="GoodAI.Platform.Core.dll" Version="9" />
-    <Module Name="GoodAI.BasicNodes.dll" Version="4" />
+    <Module Name="GoodAI.BasicNodes.dll" Version="5" />
     <Module Name="GoodAI.MNIST.dll" Version="1" />
   </UsedModules>
 </Project>
